@@ -1,0 +1,138 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 8/7/22 5:31 PM
+Description: Rendering screen
+
+java.lang.NullPointerException: Rendering screen
+	at com.Hileb.itzmx.item.weapon.ItemCopyer.Iteminf(ItemCopyer.java:109)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_44_ItemCopyer_Iteminf_ItemTooltipEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:335)
+	at net.minecraft.item.ItemStack.getTooltip(ItemStack.java:993)
+	at net.minecraft.client.gui.GuiScreen.getItemToolTip(GuiScreen.java:173)
+	at net.minecraft.client.gui.GuiScreen.renderToolTip(GuiScreen.java:167)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.renderToolTip(GuiContainerCreative.java:780)
+	at net.minecraft.client.gui.inventory.GuiContainer.renderHoveredToolTip(GuiContainer.java:193)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:727)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:381)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1177)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1208)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.Hileb.itzmx.item.weapon.ItemCopyer.Iteminf(ItemCopyer.java:109)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_44_ItemCopyer_Iteminf_ItemTooltipEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:335)
+	at net.minecraft.item.ItemStack.getTooltip(ItemStack.java:993)
+	at net.minecraft.client.gui.GuiScreen.getItemToolTip(GuiScreen.java:173)
+	at net.minecraft.client.gui.GuiScreen.renderToolTip(GuiScreen.java:167)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.renderToolTip(GuiContainerCreative.java:780)
+	at net.minecraft.client.gui.inventory.GuiContainer.renderHoveredToolTip(GuiContainer.java:193)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:727)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:381)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.inventory.GuiContainerCreative
+	Mouse location: Scaled: (213, 119). Absolute: (427, 240)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player833'/196, l='MpServer', x=6.37, y=64.00, z=12.61]]
+	Chunk stats: MultiplayerChunkCache: 812, 812
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-4,64,4), Chunk: (at 12,4,4 in -1,0; contains blocks -16,0,0 to -1,255,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 45342 game time, 45342 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 118 total; [EntitySheep['羊'/14, l='MpServer', x=-69.49, y=76.00, z=-53.17], EntityZombie['僵尸'/15, l='MpServer', x=-67.56, y=70.00, z=-67.22], EntityCow['牛'/16, l='MpServer', x=-72.50, y=80.00, z=-36.50], EntitySheep['羊'/18, l='MpServer', x=-70.45, y=79.00, z=-32.81], EntitySheep['羊'/20, l='MpServer', x=-71.47, y=79.00, z=-28.64], EntitySheep['羊'/23, l='MpServer', x=-71.55, y=79.00, z=-32.48], EntitySpider['蜘蛛'/24, l='MpServer', x=-69.66, y=75.00, z=-12.97], EntityCreeper['爬行者'/27, l='MpServer', x=-62.49, y=15.00, z=45.80], EntityEnderman['末影人'/29, l='MpServer', x=-73.47, y=12.00, z=59.29], EntityBat['蝙蝠'/31, l='MpServer', x=-67.95, y=21.56, z=89.08], EntitySkeleton['骷髅'/34, l='MpServer', x=-65.70, y=39.73, z=-60.70], EntityZombie['僵尸'/35, l='MpServer', x=-61.50, y=40.00, z=-61.50], EntityZombie['僵尸'/36, l='MpServer', x=-59.82, y=40.00, z=-61.80], EntityCow['牛'/37, l='MpServer', x=-51.20, y=70.00, z=-56.60], EntitySheep['羊'/38, l='MpServer', x=-51.24, y=70.00, z=-34.55], EntitySheep['羊'/39, l='MpServer', x=-55.26, y=72.00, z=-39.68], EntitySheep['羊'/40, l='MpServer', x=-66.55, y=75.92, z=-53.61], EntitySpider['蜘蛛'/41, l='MpServer', x=-49.96, y=23.00, z=-17.02], EntitySpider['蜘蛛'/42, l='MpServer', x=-52.30, y=56.57, z=-22.16], EntitySheep['羊'/44, l='MpServer', x=-60.81, y=71.00, z=-18.49], EntitySheep['羊'/45, l='MpServer', x=-59.65, y=75.00, z=-13.55], EntityCreeper['爬行者'/47, l='MpServer', x=-53.50, y=33.00, z=10.50], EntitySquid['鱿鱼'/49, l='MpServer', x=-54.54, y=55.93, z=4.40], EntitySquid['鱿鱼'/50, l='MpServer', x=-50.66, y=53.22, z=7.46], EntityZombie['僵尸'/51, l='MpServer', x=-61.49, y=14.00, z=40.76], EntitySquid['鱿鱼'/52, l='MpServer', x=-59.54, y=54.96, z=47.88], EntitySquid['鱿鱼'/53, l='MpServer', x=-50.55, y=62.23, z=37.04], EntitySquid['鱿鱼'/55, l='MpServer', x=-45.89, y=45.49, z=64.82], EntitySquid['鱿鱼'/56, l='MpServer', x=-53.15, y=54.07, z=73.87], EntityZombie['僵尸'/59, l='MpServer', x=-38.49, y=15.00, z=-57.28], EntitySpider['蜘蛛'/60, l='MpServer', x=-36.30, y=56.00, z=-56.30], EntitySkeleton['骷髅'/61, l='MpServer', x=-46.46, y=51.00, z=-37.75], EntityCow['牛'/62, l='MpServer', x=-41.77, y=64.00, z=-47.51], EntitySkeleton['骷髅'/63, l='MpServer', x=-46.50, y=13.00, z=-9.50], EntitySkeleton['骷髅'/64, l='MpServer', x=-35.26, y=28.00, z=-7.47], EntitySpider['蜘蛛'/65, l='MpServer', x=-34.69, y=28.00, z=-6.22], EntitySkeleton['骷髅'/66, l='MpServer', x=-34.69, y=27.85, z=-6.22], EntityBat['蝙蝠'/67, l='MpServer', x=-30.25, y=29.10, z=-8.67], EntityZombie['僵尸'/68, l='MpServer', x=-42.31, y=33.00, z=-10.32], EntitySakura['entity.entity_sakura.name'/69, l='MpServer', x=-40.00, y=65.00, z=-9.62], EntitySakura['entity.entity_sakura.name'/70, l='MpServer', x=-32.50, y=67.00, z=-7.62], EntitySakura['entity.entity_sakura.name'/71, l='MpServer', x=-33.56, y=69.00, z=8.80], EntitySakura['entity.entity_sakura.name'/72, l='MpServer', x=-42.14, y=71.00, z=0.26], EntityZombie['僵尸'/73, l='MpServer', x=-33.43, y=68.00, z=15.77], EntityWitch['女巫'/74, l='MpServer', x=-35.74, y=15.00, z=26.46], EntitySquid['鱿鱼'/75, l='MpServer', x=-41.52, y=50.32, z=55.18], EntityCreeper['爬行者'/76, l='MpServer', x=-17.50, y=17.00, z=-34.50], EntityCreeper['爬行者'/77, l='MpServer', x=-29.16, y=36.00, z=-42.62], EntitySpider['蜘蛛'/78, l='MpServer', x=-21.70, y=64.00, z=-20.74], EntityCreeper['爬行者'/79, l='MpServer', x=-20.44, y=64.00, z=-12.78], EntitySakura['entity.entity_sakura.name'/80, l='MpServer', x=-28.50, y=69.00, z=-1.24], EntityCreeper['爬行者'/81, l='MpServer', x=-27.18, y=45.00, z=1.50], EntitySakura['entity.entity_sakura.name'/82, l='MpServer', x=-29.18, y=68.00, z=7.22], EntitySakura['entity.entity_sakura.name'/83, l='MpServer', x=-26.66, y=68.00, z=3.85], EntityBat['蝙蝠'/84, l='MpServer', x=-27.17, y=25.10, z=35.28], EntityZombie['僵尸'/87, l='MpServer', x=-12.30, y=18.00, z=-29.30], EntityZombie['僵尸'/88, l='MpServer', x=-3.54, y=20.00, z=-17.79], EntityZombie['僵尸'/89, l='MpServer', x=-14.30, y=18.00, z=-27.30], EntityCow['牛'/90, l='MpServer', x=-14.11, y=63.00, z=-21.45], EntitySakura['entity.entity_sakura.name'/91, l='MpServer', x=-4.56, y=63.00, z=-21.80], EntitySakura['entity.entity_sakura.name'/92, l='MpServer', x=-3.19, y=64.00, z=-18.50], EntitySheep['羊'/93, l='MpServer', x=-12.30, y=64.00, z=-25.50], EntitySakura['entity.entity_sakura.name'/94, l='MpServer', x=-14.43, y=64.00, z=-7.22], EntitySakura['entity.entity_sakura.name'/95, l='MpServer', x=-4.15, y=64.00, z=-14.12], EntityCreeper['爬行者'/96, l='MpServer', x=-9.65, y=24.00, z=11.95], EntityBat['蝙蝠'/97, l='MpServer', x=-10.30, y=18.80, z=2.68], EntityZombie['僵尸'/98, l='MpServer', x=-9.50, y=41.00, z=8.77], EntityBat['蝙蝠'/99, l='MpServer', x=-14.62, y=44.10, z=3.83], EntityBat['蝙蝠'/100, l='MpServer', x=-8.25, y=41.10, z=10.25], EntitySpider['蜘蛛'/101, l='MpServer', x=-14.30, y=27.00, z=29.70], EntitySkeleton['骷髅'/102, l='MpServer', x=-0.73, y=28.00, z=39.51], EntitySkeleton['骷髅'/103, l='MpServer', x=-7.29, y=26.00, z=41.50], EntitySquid['鱿鱼'/104, l='MpServer', x=-6.46, y=49.05, z=68.51], EntitySquid['鱿鱼'/105, l='MpServer', x=-3.71, y=49.73, z=61.16], EntitySquid['鱿鱼'/106, l='MpServer', x=0.01, y=58.93, z=65.86], EntityBat['蝙蝠'/109, l='MpServer', x=1.50, y=45.10, z=-6.25], EntityBat['蝙蝠'/110, l='MpServer', x=9.35, y=52.10, z=-15.43], EntityCow['牛'/111, l='MpServer', x=3.15, y=64.00, z=-14.67], EntityZombie['僵尸'/112, l='MpServer', x=13.47, y=36.00, z=19.74], EntitySkeleton['骷髅'/113, l='MpServer', x=6.50, y=14.00, z=32.23], EntitySkeleton['骷髅'/114, l='MpServer', x=4.71, y=14.00, z=34.72], EntitySkeleton['骷髅'/115, l='MpServer', x=6.50, y=14.00, z=31.57], EntityBat['蝙蝠'/116, l='MpServer', x=7.25, y=28.10, z=33.25], EntitySquid['鱿鱼'/117, l='MpServer', x=9.10, y=50.81, z=41.10], EntitySquid['鱿鱼'/118, l='MpServer', x=9.00, y=53.92, z=69.57], EntitySkeleton['骷髅'/126, l='MpServer', x=22.51, y=23.00, z=-65.21], EntityBat['蝙蝠'/127, l='MpServer', x=17.75, y=11.10, z=-18.25], EntitySquid['鱿鱼'/128, l='MpServer', x=29.56, y=42.81, z=-24.93], EntityBat['蝙蝠'/129, l='MpServer', x=21.75, y=29.10, z=32.75], EntitySquid['鱿鱼'/130, l='MpServer', x=27.08, y=52.20, z=40.76], EntitySquid['鱿鱼'/131, l='MpServer', x=20.33, y=48.47, z=55.22], EntitySkeleton['骷髅'/135, l='MpServer', x=39.58, y=19.00, z=-52.05], EntityZombie['僵尸'/136, l='MpServer', x=35.73, y=19.00, z=-52.51], EntityCreeper['爬行者'/137, l='MpServer', x=45.83, y=21.00, z=-49.52], EntityCreeper['爬行者'/138, l='MpServer', x=40.82, y=23.00, z=-47.58], EntitySquid['鱿鱼'/139, l='MpServer', x=37.97, y=62.15, z=-10.11], EntitySquid['鱿鱼'/140, l='MpServer', x=31.45, y=57.35, z=-11.12], EntitySquid['鱿鱼'/141, l='MpServer', x=47.21, y=61.64, z=13.87], EntitySquid['鱿鱼'/142, l='MpServer', x=42.99, y=48.04, z=35.89], EntityCreeper['爬行者'/145, l='MpServer', x=59.30, y=22.00, z=-55.30], EntityZombieVillager['僵尸村民'/146, l='MpServer', x=61.50, y=22.00, z=-55.93], EntitySquid['鱿鱼'/147, l='MpServer', x=53.84, y=60.69, z=-16.51], EntitySquid['鱿鱼'/148, l='MpServer', x=60.58, y=54.30, z=-2.24], EntityBat['蝙蝠'/149, l='MpServer', x=59.25, y=15.10, z=14.52], EntityZombie['僵尸'/150, l='MpServer', x=62.50, y=14.00, z=11.50], EntityBat['蝙蝠'/151, l='MpServer', x=59.82, y=13.53, z=8.32], EntitySquid['鱿鱼'/152, l='MpServer', x=58.29, y=58.35, z=13.37], EntityCreeper['爬行者'/153, l='MpServer', x=61.50, y=23.00, z=82.50], EntitySquid['鱿鱼'/159, l='MpServer', x=66.94, y=52.32, z=-10.29], EntitySquid['鱿鱼'/160, l='MpServer', x=64.05, y=50.03, z=14.34], EntitySquid['鱿鱼'/161, l='MpServer', x=61.10, y=59.87, z=13.71], EntityZombie['僵尸'/162, l='MpServer', x=71.25, y=17.00, z=24.43], EntitySquid['鱿鱼'/163, l='MpServer', x=61.82, y=52.35, z=23.56], EntityZombie['僵尸'/164, l='MpServer', x=67.24, y=15.00, z=36.49], EntityCreeper['爬行者'/166, l='MpServer', x=73.19, y=13.00, z=59.53], EntityCreeper['爬行者'/167, l='MpServer', x=68.16, y=22.00, z=88.51], EntityBat['蝙蝠'/176, l='MpServer', x=81.75, y=16.00, z=-8.25], EntityPlayerSP['Player833'/196, l='MpServer', x=6.37, y=64.00, z=12.61]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2888)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:462)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_333, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 269980464 bytes (257 MB) / 923271168 bytes (880 MB) up to 1881145344 bytes (1794 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                                         | Signature |
+	|:--------- |:--------- |:------------ |:---------------------------------------------- |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                                  | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                                  | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar               | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar               | None      |
+	| UCHIJAAAA | itzmx     | 0.1.101      | IdeallandFramework-master                      | None      |
+	| UCHIJAAAA | ias       | 7.1.3.1      | InGameAccountSwitcher-Forge-1.12.2-7.1.3.1.jar | None      |
+	| UCHIJAAAA | jei       | 4.7.8.95     | jei_1.12.1-4.7.8.95.jar                        | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.6.0 - Build 27.20.100.8729' Renderer: 'Intel(R) UHD Graphics 630'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 630 GL version 4.6.0 - Build 27.20.100.8729, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz

@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "itzmx:block_infinitycake",
+    "coutt": 3
+  },
+  "ingredients": [
+    [
+      { "item": "minecraft:cake" }
+    ],
+    [
+      { "item": "itzmx:item_emc" }
+    ]
+  ],
+  "type": "forge:ore_shapeless"
+}

@@ -1,0 +1,24 @@
+{
+  "result": {
+    "item": "itzmx:item_emc",
+    "coutt": 3
+  },
+  "ingredients": [
+    [
+      { "item": "itzmx:item_main_xk" }
+    ],
+    [
+      { "item": "itzmx:item_main_tr" }
+    ],
+    [
+      { "item": "itzmx:item_main_wj" }
+    ],
+    [
+      { "item": "itzmx:item_main_sy" }
+    ],
+    [
+      { "item": "itzmx:item_rainbow" }
+    ]
+  ],
+  "type": "forge:ore_shapeless"
+}

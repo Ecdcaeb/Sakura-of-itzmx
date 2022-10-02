@@ -1,0 +1,128 @@
+{
+  "itzmx:itzmx/gethymif": {
+    "criteria": {
+      "get_stone": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "itzmx:itzmx/q_getbitplanet": {
+    "criteria": {
+      "get_bitplanet": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "itzmx:itzmx/q_getbitmaker": {
+    "criteria": {
+      "get_bitdo": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "itzmx:cards/card_neature": {
+    "criteria": {
+      "get_card_freshman": "2022-09-14 21:15:17 +0800",
+      "get_card_dark_clouds": "2022-09-14 21:15:17 +0800",
+      "get_card_daytime": "2022-09-14 21:15:17 +0800"
+    },
+    "done": false
+  },
+  "itzmx:cards/card_interference": {
+    "criteria": {
+      "get_card_fort_slim": "2022-09-14 21:15:17 +0800",
+      "get_card_blood_colored_calidan": "2022-09-14 21:15:17 +0800",
+      "get_card_forgotten_ancient_mirrors": "2022-09-14 21:15:17 +0800",
+      "get_card_lucy_the_axe_card": "2022-09-14 21:15:17 +0800",
+      "get_card_conscription_order": "2022-09-14 21:15:17 +0800"
+    },
+    "done": false
+  },
+  "itzmx:cards/card_mysterious": {
+    "criteria": {
+      "get_card_fraudulent_bottles": "2022-09-14 21:15:17 +0800"
+    },
+    "done": false
+  },
+  "itzmx:itzmx/getrainbowj": {
+    "criteria": {
+      "get_rainbowj": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2022-09-14 21:15:17 +0800"
+    },
+    "done": false
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2022-09-14 21:15:17 +0800"
+    },
+    "done": true
+  }
+}

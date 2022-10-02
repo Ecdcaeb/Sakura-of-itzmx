@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "itzmx:item_blood_rainbow",
+    "count": 9
+  },
+  "ingredients": [
+    [
+      { "item": "itzmx:block_rainbow" }
+    ]
+  ],
+  "type": "forge:ore_shapeless"
+}

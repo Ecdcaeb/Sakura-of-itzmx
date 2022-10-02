@@ -1,0 +1,20 @@
+{
+  "entity.sakura.hurt":
+  {
+    "category": "entity",
+    "subtitle": "entity.sakura.hurt",
+    "sounds": [{"name":  "itzmx:entity/sakura/hurt", "stream":  true}]
+  },
+  "entity.sakura.feed":
+  {
+    "category": "music",
+    "subtitle": "entity.sakura.feed",
+    "sounds": [{"name":  "itzmx:entity/sakura/feed", "stream":  true}]
+  },
+  "entity.sakura.en":
+  {
+    "category": "entity",
+    "subtitle": "entity.sakura.en",
+    "sounds": [{"name":  "itzmx:entity/sakura/en", "stream":  true}]
+  }
+}

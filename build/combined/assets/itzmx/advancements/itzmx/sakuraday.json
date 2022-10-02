@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_sakura_itzmx"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.sakura.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.sakura.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": true,
+    "frame":"goal"
+  },
+  "parent": "itzmx:itzmx/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

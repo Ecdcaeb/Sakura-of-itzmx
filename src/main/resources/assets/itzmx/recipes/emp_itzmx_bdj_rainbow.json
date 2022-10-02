@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  S",
+    " A ",
+    "0  "
+  ],
+
+  "key":
+  {
+    "S":
+    {
+      "item": "flammpfeil.slashblade:slashbladewrapper",
+      "data": 0
+    },
+    "0":
+    {
+      "item": "flammpfeil.slashblade:proudsoul",
+      "data": 0
+    },
+    "A":
+    {
+      "item": "itzmx:item_rainbowj",
+      "data": 1
+    }
+  },
+
+  "result":
+  {
+    "nbt": "{killCount:0,ProudSoul:0,RepairCounter:0,baseAttackModifier:4,RepairCost:1,AttackAmplifier:2f,CustomMaxDamage:256,SummonedSwordColor:0,StandbyRenderType:1,isNoScabbard:0b,isCBCreator:1b,CurrentItemName:\"slashBlade.foxchange\",ModelName:\"named/sange/sange\",TextureName:\"named/kf_cx/white\",SpecialAttackType:0,SB.SEffect:{WitherEdge:1},ench:[{id:21s,lvl:10s},{id:16s,lvl:10s},{id:2s,lvl:10s},{id:20s,lvl:10s},{id:7s,lvl:10s}]}",
+    "item": "flammpfeil.slashblade:slashblade",
+    "count": 1
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_food_mif"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.getmif.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.getmif.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "itzmx:itzmx/getmf",
+  "criteria": {
+    "get_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:item_food_mif"
+          }
+        ]
+      },
+      "get_mf": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "itzmx:item_foodm_mf"
+            }
+          ]
+        }
+      },
+      "get_hy": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "itzmx:item_foodm_hy"
+            }
+          ]
+        }
+      },
+      "get_ch": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "itzmx:item_foodm_ch"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

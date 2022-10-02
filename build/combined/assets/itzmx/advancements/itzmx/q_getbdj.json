@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_rainbow_bdj"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.Qgetbdj.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.Qgetbdj.desc"
+    },
+    "show_toast":true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "frame":"challenge"
+  },
+  "parent": "itzmx:itzmx/root",
+  "criteria": {
+    "get_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:item_rainbow_bdj"
+          }
+        ]
+      }
+    }
+  }
+}

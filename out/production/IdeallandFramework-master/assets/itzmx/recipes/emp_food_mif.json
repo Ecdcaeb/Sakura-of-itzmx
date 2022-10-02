@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MH",
+    "CW"
+  ],
+  "key": {
+    "M": {
+      "item": "itzmx:item_foodm_mf"
+    },
+    "H": {
+      "item": "itzmx:item_foodm_hy"
+    },
+    "C": {
+      "item": "itzmx:item_foodm_ch"
+    },
+    "W": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "itzmx:item_food_mif_uneatable",
+    "count": 1
+  }
+}

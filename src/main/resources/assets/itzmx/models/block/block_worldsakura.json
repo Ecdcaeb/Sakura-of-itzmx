@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "itzmx:blocks/block_worldsakura_top",
+        "front": "itzmx:blocks/block_worldsakura_off",
+        "side": "itzmx:blocks/block_worldsakura_side"
+    }
+}

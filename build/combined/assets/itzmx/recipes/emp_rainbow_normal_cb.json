@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gDg",
+    "SSS"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "minecraft:stone",
+      "data": 0
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_rainbow_normal_cb",
+    "nbt": "{display:{Lore:[\"§f樱特尔(ಡωಡ)\"]},Tags:[\"樱特尔\"]}",
+    "count": 1
+  }
+}

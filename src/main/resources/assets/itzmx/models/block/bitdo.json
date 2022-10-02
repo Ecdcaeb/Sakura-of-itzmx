@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"particle": "itzmx:blocks/block_bitdo_leftright",
+		"down": "itzmx:blocks/block_bitdo_bottom",
+		"up": "itzmx:blocks/block_bitdo_top",
+		"north": "itzmx:blocks/block_bitdo_frontback",
+		"east": "itzmx:blocks/block_bitdo_leftright",
+		"south": "itzmx:blocks/block_bitdo_frontback",
+		"west": "itzmx:blocks/block_bitdo_leftright"
+	}
+}

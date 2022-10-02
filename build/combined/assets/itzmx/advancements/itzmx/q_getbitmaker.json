@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:block_bitdo"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.QgetBitmaker.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.QgetBitmaker.desc"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame":"challenge"
+  },
+  "parent": "itzmx:itzmx/getrainbowcb",
+  "criteria": {
+    "get_bitdo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:block_bitdo"
+          }
+        ]
+      }
+    }
+  }
+}

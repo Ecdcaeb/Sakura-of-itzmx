@@ -1,0 +1,179 @@
+{
+  "display": {
+    "icon": {
+      "item":"momostories:adjudicator_balance"
+    },
+    "title": {
+      "translate": "itemGroup.momo_stories_interference"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.card.getcard.interference.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:cards/root",
+  "criteria": {
+    "get_card_adjudicator_balance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:adjudicator_balance"
+          }
+        ]
+      }
+    },
+    "get_card_oham_heavy_cavalry_regiment": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:oham_heavy_cavalry_regiment"
+          }
+        ]
+      }
+    },
+    "get_card_erin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:erin"
+          }
+        ]
+      }
+    },
+    "get_card_soul_puppets": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:soul_puppets"
+          }
+        ]
+      }
+    },
+    "get_card_lucy_the_axe_card": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:lucy_the_axe_card"
+          }
+        ]
+      }
+    },
+    "get_card_devils_blood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:devils_blood"
+          }
+        ]
+      }
+    },
+    "get_card_blood_colored_calidan": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:blood_colored_calidan"
+          }
+        ]
+      }
+    },
+    "get_card_leyden_jar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:leyden_jar"
+          }
+        ]
+      }
+    },
+    "get_card_fort_slim": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:fort_slim"
+          }
+        ]
+      }
+    },
+    "get_card_garland_redemption": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:garland_redemption"
+          }
+        ]
+      }
+    },
+    "get_card_conscription_order": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:conscription_order"
+          }
+        ]
+      }
+    },
+    "get_card_alchemist_medal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:alchemist_medal"
+          }
+        ]
+      }
+    },
+    "get_card_forgotten_ancient_mirrors": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:forgotten_ancient_mirrors"
+          }
+        ]
+      }
+    },
+    "get_card_the_supreme_magi_deep_lake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:the_supreme_magi_deep_lake"
+          }
+        ]
+      }
+    },
+    "get_card_luna_church": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:luna_church"
+          }
+        ]
+      }
+    },
+    "get_card_church_of_the_sun_god": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:church_of_the_sun_god"
+          }
+        ]
+      }
+    }
+  }
+}

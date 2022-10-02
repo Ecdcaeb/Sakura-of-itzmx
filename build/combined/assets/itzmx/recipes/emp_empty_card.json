@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "QBW",
+    "BAB",
+    "RBE"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:paper"
+    },
+    "B":
+    {
+      "item": "minecraft:gold_ingot"
+    },
+
+    "Q":
+    {
+      "item": "minecraft:dye",
+      "data": 0
+    },
+    "W":
+    {
+      "item": "minecraft:dye",
+      "data": 1
+    },
+    "E":
+    {
+      "item": "minecraft:dye",
+      "data": 2
+    },
+    "R":
+    {
+      "item": "minecraft:dye",
+      "data": 4
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_card_null",
+    "count": 1
+  }
+}

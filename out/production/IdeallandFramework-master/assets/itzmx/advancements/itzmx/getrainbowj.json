@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_rainbowj"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.getRainbowj.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.getRainbowj.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:itzmx/getrainbow",
+  "criteria": {
+    "get_rainbowj": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:item_rainbowj"
+          }
+        ]
+      }
+    }
+  }
+}

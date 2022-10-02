@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "momostories:fake_diamond"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.goodluck.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.goodluck.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:cards/root",
+  "criteria": {
+    "get_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "momostories:fake_diamond"
+          }
+        ]
+      }
+    }
+  }
+}

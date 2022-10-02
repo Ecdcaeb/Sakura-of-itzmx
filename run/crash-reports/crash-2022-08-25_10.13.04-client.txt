@@ -1,0 +1,133 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 8/25/22 10:13 AM
+Description: Updating screen events
+
+java.lang.IndexOutOfBoundsException: Index: 39, Size: 39
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at net.minecraft.inventory.Container.mergeItemStack(Container.java:643)
+	at com.Hileb.itzmx.gui.Bitdo.ContainerBitDo.transferStackInSlot(ContainerBitDo.java:168)
+	at net.minecraft.inventory.Container.slotClick(Container.java:271)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.windowClick(PlayerControllerMP.java:610)
+	at net.minecraft.client.gui.inventory.GuiContainer.handleMouseClick(GuiContainer.java:693)
+	at net.minecraft.client.gui.inventory.GuiContainer.mouseClicked(GuiContainer.java:430)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:611)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:576)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1885)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1187)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at net.minecraft.inventory.Container.mergeItemStack(Container.java:643)
+	at com.Hileb.itzmx.gui.Bitdo.ContainerBitDo.transferStackInSlot(ContainerBitDo.java:168)
+	at net.minecraft.inventory.Container.slotClick(Container.java:271)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.windowClick(PlayerControllerMP.java:610)
+	at net.minecraft.client.gui.inventory.GuiContainer.handleMouseClick(GuiContainer.java:693)
+	at net.minecraft.client.gui.inventory.GuiContainer.mouseClicked(GuiContainer.java:430)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:611)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:576)
+
+-- Affected screen --
+Details:
+	Screen name: com.Hileb.itzmx.gui.Bitdo.GuiContainerBitDo
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player250'/128, l='MpServer', x=-182.50, y=73.00, z=206.91]]
+	Chunk stats: MultiplayerChunkCache: 839, 839
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-194,64,243), Chunk: (at 14,4,3 in -13,15; contains blocks -208,0,240 to -193,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 306277 game time, 29597 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 71 total; [EntityCreeper['爬行者'/0, l='MpServer', x=-258.50, y=22.00, z=194.50], EntityBat['蝙蝠'/513, l='MpServer', x=-164.25, y=45.05, z=210.53], EntityCreeper['爬行者'/5, l='MpServer', x=-224.45, y=39.00, z=208.54], EntitySakura['entity.entity_sakura.name'/8, l='MpServer', x=-215.52, y=76.00, z=202.83], EntityZombie['僵尸'/521, l='MpServer', x=-164.50, y=24.00, z=168.50], EntityPlayerSP['Player250'/128, l='MpServer', x=-182.50, y=73.00, z=206.91], EntitySkeleton['骷髅'/10, l='MpServer', x=-215.50, y=48.00, z=215.50], EntityZombie['僵尸'/522, l='MpServer', x=-163.50, y=24.00, z=169.50], EntityZombie['僵尸'/523, l='MpServer', x=-164.50, y=24.00, z=166.50], EntityCreeper['爬行者'/268, l='MpServer', x=-163.50, y=19.00, z=258.50], EntityBat['蝙蝠'/22, l='MpServer', x=-197.75, y=28.05, z=129.25], EntityCreeper['爬行者'/408, l='MpServer', x=-103.50, y=26.00, z=275.50], EntitySakura['entity.entity_sakura.name'/25, l='MpServer', x=-188.54, y=76.00, z=219.78], EntityBat['蝙蝠'/31, l='MpServer', x=-188.25, y=60.10, z=204.75], EntityCreeper['爬行者'/287, l='MpServer', x=-160.83, y=40.00, z=286.50], EntitySakura['entity.entity_sakura.name'/32, l='MpServer', x=-171.16, y=64.00, z=198.62], EntityCreeper['爬行者'/288, l='MpServer', x=-168.42, y=37.00, z=285.80], EntityBat['蝙蝠'/34, l='MpServer', x=-187.25, y=23.10, z=269.25], EntityCreeper['爬行者'/290, l='MpServer', x=-167.50, y=37.00, z=285.50], EntityBat['蝙蝠'/36, l='MpServer', x=-169.25, y=30.73, z=259.37], EntityCreeper['爬行者'/42, l='MpServer', x=-164.01, y=21.00, z=145.50], EntitySkeleton['骷髅'/43, l='MpServer', x=-165.50, y=21.00, z=145.50], EntityItem['item.item.rottenFlesh'/45, l='MpServer', x=-173.71, y=66.00, z=144.38], EntitySakura['entity.entity_sakura.name'/46, l='MpServer', x=-174.36, y=71.00, z=174.49], EntitySkeleton['骷髅'/48, l='MpServer', x=-163.50, y=33.00, z=176.50], EntitySkeleton['骷髅'/432, l='MpServer', x=-111.54, y=19.00, z=278.78], EntityZombie['僵尸'/49, l='MpServer', x=-161.50, y=33.00, z=200.50], EntitySakura['entity.entity_sakura.name'/50, l='MpServer', x=-170.15, y=64.00, z=198.74], EntitySakura['entity.entity_sakura.name'/51, l='MpServer', x=-160.39, y=64.00, z=193.15], EntitySpider['蜘蛛'/52, l='MpServer', x=-164.30, y=53.10, z=209.70], EntityCreeper['爬行者'/54, l='MpServer', x=-166.50, y=20.00, z=250.50], EntitySkeleton['骷髅'/55, l='MpServer', x=-163.50, y=20.00, z=253.50], EntitySkeleton['骷髅'/57, l='MpServer', x=-173.50, y=21.00, z=261.50], EntitySkeleton['骷髅'/59, l='MpServer', x=-173.50, y=28.00, z=272.50], EntitySkeleton['骷髅'/60, l='MpServer', x=-173.50, y=46.00, z=276.50], EntityCreeper['爬行者'/61, l='MpServer', x=-163.78, y=34.00, z=275.50], EntitySkeleton['骷髅'/66, l='MpServer', x=-159.50, y=31.00, z=145.50], EntitySquid['鱿鱼'/69, l='MpServer', x=-151.60, y=59.00, z=164.20], EntityZombie['僵尸'/72, l='MpServer', x=-147.50, y=15.00, z=176.50], EntityCreeper['爬行者'/73, l='MpServer', x=-153.50, y=17.00, z=189.50], EntitySakura['entity.entity_sakura.name'/74, l='MpServer', x=-144.77, y=64.00, z=198.48], EntityBat['蝙蝠'/75, l='MpServer', x=-139.44, y=41.29, z=215.14], EntitySpider['蜘蛛'/76, l='MpServer', x=-147.03, y=64.00, z=214.00], EntityZombie['僵尸'/461, l='MpServer', x=-116.50, y=38.00, z=279.50], EntitySkeleton['骷髅'/81, l='MpServer', x=-153.50, y=31.00, z=263.50], EntityItem['item.item.rottenFlesh'/85, l='MpServer', x=-132.88, y=62.00, z=228.30], EntityCreeper['爬行者'/470, l='MpServer', x=-165.50, y=44.00, z=207.50], EntityCreeper['爬行者'/87, l='MpServer', x=-142.70, y=29.00, z=244.52], EntityCreeper['爬行者'/471, l='MpServer', x=-164.50, y=44.00, z=208.50], EntityCreeper['爬行者'/88, l='MpServer', x=-145.18, y=31.00, z=243.50], EntityCreeper['爬行者'/472, l='MpServer', x=-163.50, y=44.00, z=211.50], EntitySkeleton['骷髅'/473, l='MpServer', x=-164.50, y=44.00, z=206.50], EntityBat['蝙蝠'/90, l='MpServer', x=-143.25, y=55.10, z=248.25], EntitySkeleton['骷髅'/91, l='MpServer', x=-142.21, y=18.00, z=269.49], EntitySkeleton['骷髅'/93, l='MpServer', x=-133.26, y=21.00, z=259.54], EntityZombieVillager['僵尸村民'/94, l='MpServer', x=-145.48, y=30.00, z=276.23], EntityZombie['僵尸'/95, l='MpServer', x=-128.82, y=33.00, z=280.17], EntityCreeper['爬行者'/97, l='MpServer', x=-112.54, y=18.00, z=222.20], EntityCreeper['爬行者'/100, l='MpServer', x=-114.32, y=19.00, z=280.48], EntityZombie['僵尸'/230, l='MpServer', x=-164.50, y=23.00, z=217.50], EntitySkeleton['骷髅'/358, l='MpServer', x=-111.50, y=29.00, z=285.50], EntitySkeleton['骷髅'/103, l='MpServer', x=-119.50, y=21.00, z=282.79], EntityBat['蝙蝠'/105, l='MpServer', x=-112.81, y=22.04, z=280.72], EntitySkeleton['骷髅'/362, l='MpServer', x=-212.50, y=50.00, z=215.50], EntitySkeleton['骷髅'/107, l='MpServer', x=-107.50, y=21.00, z=276.50], EntityBat['蝙蝠'/235, l='MpServer', x=-158.45, y=27.63, z=211.90], EntityBat['蝙蝠'/242, l='MpServer', x=-133.58, y=21.00, z=254.37], EntityBat['蝙蝠'/504, l='MpServer', x=-156.65, y=47.00, z=235.30], EntityBat['蝙蝠'/505, l='MpServer', x=-158.50, y=47.81, z=233.50], EntityBat['蝙蝠'/507, l='MpServer', x=-158.98, y=46.00, z=228.34], EntitySpider['蜘蛛'/382, l='MpServer', x=-201.06, y=41.00, z=278.00]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2888)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:462)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_333, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 449837512 bytes (428 MB) / 1007157248 bytes (960 MB) up to 1881145344 bytes (1794 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 8 mods loaded, 8 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                                         | Signature                                |
+	|:--------- |:--------- |:------------ |:---------------------------------------------- |:---------------------------------------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                                  | None                                     |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                                  | None                                     |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar               | None                                     |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar               | None                                     |
+	| UCHIJAAAA | itzmx     | 0.1.101      | IdeallandFramework-master                      | None                                     |
+	| UCHIJAAAA | ic2       | 2.8.27-ex112 | industrialcraft-2-2.8.27-ex112.jar             | de041f9f6187debbc77034a344134053277aa3b0 |
+	| UCHIJAAAA | ias       | 7.1.3.1      | InGameAccountSwitcher-Forge-1.12.2-7.1.3.1.jar | None                                     |
+	| UCHIJAAAA | jei       | 4.7.8.95     | jei_1.12.1-4.7.8.95.jar                        | None                                     |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.6.0 - Build 27.20.100.8729' Renderer: 'Intel(R) UHD Graphics 630'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 630 GL version 4.6.0 - Build 27.20.100.8729, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz

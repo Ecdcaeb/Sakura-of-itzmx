@@ -1,0 +1,12 @@
+{
+  "result": {
+    "item": "itzmx:item_rainbow",
+    "count": 1
+  },
+  "ingredients": [
+    [
+      { "item": "poop:poop_raw_ingot" }
+    ]
+  ],
+  "type": "forge:ore_shapeless"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "RAR",
+    "ABA",
+    "RAR"
+  ],
+
+  "key":
+  {
+    "R":
+    {
+      "item": "minecraft:redstone"
+    },
+    "A":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "B":
+    {
+      "item": "item_rainbow_normal_cb"
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:block_worldsakurawa",
+    "count": 1
+  }
+}

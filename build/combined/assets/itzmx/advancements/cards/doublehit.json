@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:diamond_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.doublehit.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.doublehit.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:cards/goodluck",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " A ",
+    " A ",
+    "C0C"
+  ],
+
+  "key":
+  {
+    "0":
+    {
+      "item": "minecraft:stick"
+    },
+    "A":
+    {
+      "item": "itzmx:item_blood_rainbow",
+      "data": 1
+    },
+    "C": {
+      "item": "itzmx:item_rainbow_cb"
+    }
+  },
+
+  "result":
+  {
+    "nbt": "{AttributeModifiers:[{Operation:0,Amount:20,UUIDLeast:-1636566883658978815L,UUIDMost:2638783885547454956L,AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\"},{Operation:0,Amount:7,UUIDLeast:-1638981694166994575L,UUIDMost:2758339918956387275L,AttributeName:\"generic.attackSpeed\",Name:\"generic.attackSpeed\"},{Operation:0,Amount:10,UUIDLeast:-1279788928773863394L,UUIDMost:2544227529513753741L,AttributeName:\"generic.maxHealth\",Name:\"generic.maxHealth\"},{Operation:0,Amount:10,UUIDLeast:-1659178232929925869L,UUIDMost:2833975587743687341L,AttributeName:\"generic.armor\",Name:\"generic.armor\"},{Operation:0,Amount:7,UUIDLeast:-1447981584344182248L,UUIDMost:2341862761718693555L,AttributeName:\"generic.reachDistance\",Name:\"generic.reachDistance\"}],display:{Name:\"彩虹剑-真\",Lore:[\"§7撕裂斩击 X\",\"\",\"\",\"-真正的彩虹剑-\",\" -独一无二的-\",\"  -论坛专属-\"]},Tags:[\"really rainbowj\"],HideFlags:7,ench:[{id:20s,lvl:10s},{id:21s,lvl:10s}]}",
+    "item": "itzmx:item_rainbowj",
+    "count": 1
+  }
+}

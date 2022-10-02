@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " A ",
+    "ABA",
+    " A "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "itzmx:item_blood_rainbow"
+    },
+    "B":
+    {
+      "item": "itzmx:item_rainbow_cb"
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_main_null",
+    "count": 1
+  }
+}

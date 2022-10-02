@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_foodm_mf"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.getmf.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.getmf.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:itzmx/gethy",
+  "criteria": {
+    "get_mf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:item_foodm_mf"
+          }
+        ]
+      }
+    }
+  }
+}

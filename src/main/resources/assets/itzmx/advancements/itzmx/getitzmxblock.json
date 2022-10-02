@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:block_worldsakura"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.getItzmxBlock.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.getItzmxBlock.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:itzmx/getcb",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

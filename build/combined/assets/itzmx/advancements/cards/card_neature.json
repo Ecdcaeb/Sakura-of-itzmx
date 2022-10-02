@@ -1,0 +1,89 @@
+{
+  "display": {
+    "icon": {
+      "item":"momostories:daytime"
+    },
+    "title": {
+      "translate": "itemGroup.momo_stories_nature"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.card.getcard.neature.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:cards/root",
+  "criteria": {
+    "get_card_daytime": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:daytime"
+          }
+        ]
+      }
+    },
+    "get_card_night": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:night"
+          }
+        ]
+      }
+    },
+    "get_card_fine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:fine"
+          }
+        ]
+      }
+    },
+    "get_card_dark_clouds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:dark_clouds"
+          }
+        ]
+      }
+    },
+    "get_card_the_fruit_of_the_flowing_years_card": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:the_fruit_of_the_flowing_years_card"
+          }
+        ]
+      }
+    },
+    "get_card_freshman": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:freshman"
+          }
+        ]
+      }
+    },
+    "get_card_reed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:reed"
+          }
+        ]
+      }
+    }
+  }
+}

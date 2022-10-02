@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "itzmx:item_blood_rainbow"
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:block_rainbow",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:block_bitplanet"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.QgetBitplanet.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.QgetBitplanet.desc"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame":"goal"
+  },
+  "parent": "itzmx:itzmx/q_getbitmaker",
+  "criteria": {
+    "get_bitplanet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:block_bitplanet"
+          }
+        ]
+      }
+    }
+  }
+}

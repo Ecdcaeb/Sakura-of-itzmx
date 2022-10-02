@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G ",
+    "B  ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:wheat"
+    },
+    "G": {
+      "item": "minecraft:dye",
+      "data": 2
+    },
+    "B": {
+      "item": "minecraft:dye",
+      "data": 15
+    }
+  },
+  "result": {
+    "item": "itzmx:item_foodm_ch",
+    "count": 1
+  }
+}

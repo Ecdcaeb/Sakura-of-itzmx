@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:block_worldsakura"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.root.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.root.desc"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "itzmx:item_rainbow_normal_cb_get": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:crafting_table"
+          }
+        ]
+      }
+    }
+  }
+}

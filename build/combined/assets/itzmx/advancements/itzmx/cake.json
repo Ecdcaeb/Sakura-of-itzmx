@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_rainbow"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.cake.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.cake.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:itzmx/hellosakura",
+  "criteria": {
+    "get_rainbow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:block_infinitycake"
+          }
+        ]
+      }
+    }
+  }
+}

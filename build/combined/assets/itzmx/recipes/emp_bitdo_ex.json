@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "KRK",
+    "BQB",
+    "ZXC"
+  ],
+  "key": {
+    "Q": {
+      "item": "itzmx:item_rainbow_cb"
+    },
+    "Z": {
+      "item": "itzmx:item_main_xk"
+    },
+    "X": {
+      "item": "itzmx:item_main_tr"
+    },
+    "C": {
+      "item": "itzmx:item_main_wj"
+    },
+    "K": {
+      "item": "itzmx:item_main_sy"
+    },
+    "R": {
+      "item": "itzmx:item_emc"
+    },
+    "B": {
+      "item": "itzmx:item_blood_rainbow"
+    }
+  },
+  "result": {
+    "item": "itzmx:block_bitdo",
+    "count": 1
+  }
+}

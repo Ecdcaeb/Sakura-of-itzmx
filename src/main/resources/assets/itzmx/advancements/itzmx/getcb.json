@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_rainbow_normal_cb"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.getcb.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.getcb.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "itzmx:itzmx/root",
+  "criteria": {
+    "get_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:item_rainbow_normal_cb"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_sakura_itzmx"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.itzmx.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.itzmx.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:itzmx/q_getbitplanet",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 7/21/22 6:41 PM
+Description: Ticking entity
+
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at com.Hileb.itzmx.entity.EntitySakura.onUpdate(EntitySakura.java:168)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_181_EntitySakura_onUpdate_LivingUpdateEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.common.ForgeHooks.onLivingUpdate(ForgeHooks.java:567)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2314)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:346)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2171)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:871)
+	at net.minecraft.world.World.updateEntity(World.java:2130)
+	at net.minecraft.world.World.updateEntities(World.java:1931)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at com.Hileb.itzmx.entity.EntitySakura.onUpdate(EntitySakura.java:168)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_181_EntitySakura_onUpdate_LivingUpdateEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.common.ForgeHooks.onLivingUpdate(ForgeHooks.java:567)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2314)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:346)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2171)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:871)
+	at net.minecraft.world.World.updateEntity(World.java:2130)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:chicken (net.minecraft.entity.passive.EntityChicken)
+	Entity ID: 0
+	Entity Name: 鸡
+	Entity's Exact location: -339.14, 72.00, 77.68
+	Entity's Block location: World: (-340,72,77), Chunk: (at 12,4,13 in -22,4; contains blocks -352,0,64 to -337,255,79), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1931)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
+
+-- Affected level --
+Details:
+	Level name: 新的世界
+	All players: 1 total; [EntityPlayerMP['Player564'/455, l='新的世界', x=-159.50, y=77.00, z=253.50]]
+	Chunk stats: ServerChunkCache: 841 Drop: 0
+	Level seed: -3520206018978162962
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-160,64,256), Chunk: (at 0,4,0 in -10,16; contains blocks -160,0,256 to -145,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 302400 game time, 13000 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 13648 (now: false), thunder time: 15156 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:750)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_333, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 503328736 bytes (480 MB) / 1053818880 bytes (1005 MB) up to 1881145344 bytes (1794 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 9 mods loaded, 9 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID                    | Version      | Source                                         | Signature                                |
+	|:--------- |:--------------------- |:------------ |:---------------------------------------------- |:---------------------------------------- |
+	| UCHIJAAAA | minecraft             | 1.12.2       | minecraft.jar                                  | None                                     |
+	| UCHIJAAAA | mcp                   | 9.42         | minecraft.jar                                  | None                                     |
+	| UCHIJAAAA | FML                   | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar               | None                                     |
+	| UCHIJAAAA | forge                 | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar               | None                                     |
+	| UCHIJAAAA | itzmx                 | 0.1.101      | IdeallandFramework-master                      | None                                     |
+	| UCHIJAAAA | flammpfeil.slashblade | mc1.12.1-r2  | SlashBlade-mc1.12.1-r2.jar                     | None                                     |
+	| UCHIJAAAA | ic2                   | 2.8.27-ex112 | industrialcraft-2-2.8.27-ex112.jar             | de041f9f6187debbc77034a344134053277aa3b0 |
+	| UCHIJAAAA | ias                   | 7.1.3.1      | InGameAccountSwitcher-Forge-1.12.2-7.1.3.1.jar | None                                     |
+	| UCHIJAAAA | jei                   | 4.7.8.95     | jei_1.12.1-4.7.8.95.jar                        | None                                     |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player564'/455, l='新的世界', x=-159.50, y=77.00, z=253.50]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

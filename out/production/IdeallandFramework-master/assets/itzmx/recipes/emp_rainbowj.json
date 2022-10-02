@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " A ",
+    " A ",
+    " 0 "
+  ],
+
+  "key":
+  {
+    "0":
+    {
+      "item": "minecraft:stick"
+    },
+    "A":
+    {
+      "item": "itzmx:item_blood_rainbow"
+    }
+  },
+
+  "result":
+  {
+    "nbt": "{display:{Name:\"彩虹剑-伪\",Lore:[\"-伪造的彩虹剑-\"]},ench:[{id:71s,lvl:1s}]}",
+    "item": "itzmx:item_rainbowj",
+    "count": 1
+  }
+}

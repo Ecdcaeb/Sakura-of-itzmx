@@ -1,0 +1,22 @@
+{
+  "parent": "itzmx:itzmx/hellosakura",
+  "display":{
+    "icon":{
+      "item":"minecraft:snow"
+    },
+    "title":{
+      "translate": "advancements.itzmxAdvancements.winter.title"
+    },
+    "description":{
+      "translate": "advancements.itzmxAdvancements.winter.desc"
+    },
+    "show_toast":true,
+    "announce_to_chat":true,
+    "hidden":true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

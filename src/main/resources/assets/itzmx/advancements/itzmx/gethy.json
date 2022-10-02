@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "itzmx:item_foodm_hy"
+    },
+    "title": {
+      "translate": "advancements.itzmxAdvancements.gethy.title"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.gethy.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:itzmx/getch",
+  "criteria": {
+    "get_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itzmx:item_foodm_hy"
+          }
+        ]
+      }
+    }
+  }
+}

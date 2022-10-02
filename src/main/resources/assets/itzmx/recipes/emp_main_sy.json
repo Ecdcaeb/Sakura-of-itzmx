@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " B ",
+    "BAB",
+    " B "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "itzmx:item_main_null"
+    },
+    "B":
+    {
+      "item": "minecraft:clock"
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_main_sy",
+    "count": 1
+  }
+}

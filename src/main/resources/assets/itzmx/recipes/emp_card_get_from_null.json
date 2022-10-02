@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AB",
+    "C "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "itzmx:item_card_null"
+    },
+    "B":
+    {
+      "item": "itzmx:item_main_xk"
+    },
+    "C":
+    {
+      "item": "itzmx:item_main_tr"
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_card_get_from_null",
+    "count": 1
+  }
+}

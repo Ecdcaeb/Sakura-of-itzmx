@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "KRK",
+    "BQB",
+    "ZXC"
+  ],
+  "key": {
+    "Q": {
+      "item": "itzmx:item_rainbow_cb"
+    },
+    "Z": {
+      "item": "ic2:te",
+      "data": 62
+    },
+    "X": {
+      "item": "ic2:te",
+      "data": 63
+    },
+    "C": {
+      "item": "ic2:te",
+      "data": 64
+    },
+    "K": {
+      "item": "ic2:te",
+      "data": 80
+    },
+    "R": {
+      "item": "ic2:resource",
+      "data": 13
+    },
+    "B": {
+      "item": "itzmx:item_blood_rainbow"
+    }
+  },
+  "result": {
+    "item": "itzmx:block_bitdo",
+    "count": 1
+  }
+}

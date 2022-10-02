@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BA",
+    "BB"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "itzmx:item_card_null"
+    },
+    "B":
+    {
+      "item": "itzmx:item_emc"
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_copyer",
+    "count": 3
+  }
+}

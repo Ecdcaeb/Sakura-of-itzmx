@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    "BAD",
+    " E "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "itzmx:item_main_null"
+    },
+    "B":
+    {
+      "item": "minecraft:diamond"
+    },
+    "C":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "D":
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    "E":
+    {
+      "item": "minecraft:emerald"
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_main_tr",
+    "count": 1
+  }
+}

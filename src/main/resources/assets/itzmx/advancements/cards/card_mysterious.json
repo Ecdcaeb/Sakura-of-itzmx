@@ -1,0 +1,69 @@
+{
+  "display": {
+    "icon": {
+      "item":"momostories:fraudulent_bottles"
+    },
+    "title": {
+      "translate": "itemGroup.momo_stories_mysterious"
+    },
+    "description": {
+      "translate": "advancements.itzmxAdvancements.card.getcard.mysterious.desc"
+    },
+    "show_toast": true ,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "itzmx:cards/root",
+  "criteria": {
+    "get_card_the_book_of_forgery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:the_book_of_forgery"
+          }
+        ]
+      }
+    },
+    "get_card_plague_doctor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:plague_doctor"
+          }
+        ]
+      }
+    },
+    "get_card_fraudulent_bottles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:fraudulent_bottles"
+          }
+        ]
+      }
+    },
+    "get_card_twist": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:twist"
+          }
+        ]
+      }
+    },
+    "get_card_the_book_of_manifestation": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item":"momostories:the_book_of_manifestation"
+          }
+        ]
+      }
+    }
+  }
+}

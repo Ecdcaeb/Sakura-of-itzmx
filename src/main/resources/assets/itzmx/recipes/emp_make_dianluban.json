@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BAB",
+    "CCC"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "itzmx:item_blood_rainbow"
+    },
+    "B": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "minecraft:iron_ingot"
+    }
+
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_rainbow_cb",
+    "nbt": "{display:{Lore:[\"樱特尔(ಡωಡ)\",\"-令人难以置信的速度-\"]},Tags:[\"樱特尔\"]}",
+    "count": 1
+  }
+}

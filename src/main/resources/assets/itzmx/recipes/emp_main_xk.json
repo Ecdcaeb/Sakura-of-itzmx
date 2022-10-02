@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " A ",
+    "   "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "itzmx:item_main_null"
+    }
+  },
+
+  "result":
+  {
+    "item": "itzmx:item_main_xk",
+    "count": 1
+  }
+}
